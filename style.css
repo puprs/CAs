@@ -218,21 +218,30 @@ body {
   gap: 10px;
 }
 
-.type-btn, .difficulty-btn {
+.type-btn, .difficulty-btn, a.type-btn {
   font-family: sans-serif;
   border: none;
   cursor: pointer;
   transition: color 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
 }
 
-.type-btn {
+.type-btn, a.type-btn {
   background: none;
   color: white;
   font-size: 16px;
   text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  vertical-align: middle;
+
 }
 
-.type-btn:hover, .type-btn.active {
+
+.type-btn:hover, .type-btn.active, a.type-btn:hover, a.type-btn.active  {
   color: #0f0;
 }
 
@@ -270,7 +279,7 @@ body {
 }
 
 
-.hvr-forward {
+.hvr-forward, a.hvr-forward{
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
@@ -279,7 +288,7 @@ body {
   transition-property: transform;
 }
 
-.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active, a.hvr-forward:focus, a.hvr-forward:active {
   transform: translateX(8px);
 }
 
